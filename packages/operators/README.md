@@ -2,7 +2,7 @@
 
 The most necessary operators that are missing in the main library
 
-- `shareState` - similar to `shareReplay({refCount: true, bufferSize: 1})`, but returning the last value when resubscribing
+- `shareState()` - similar to `shareReplay({refCount: true, bufferSize: 1})`, but returning the last value when resubscribing
 
 [Other @SafeRx libraries](https://github.com/A77AY/SafeRx)
 
@@ -13,6 +13,8 @@ npm i @saferx/operators
 ```
 
 ## Usage
+
+### `shareState()`
 
 ```ts
 import { shareState } from '@saferx/operators';

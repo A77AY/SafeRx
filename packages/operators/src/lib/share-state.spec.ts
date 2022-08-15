@@ -11,7 +11,7 @@ it('should return identical frames with source', () => {
   marbleAssert(getMessages(hot(src).pipe(shareState()))).toEqual(e(src));
 });
 
-describe('starting value', function() {
+describe('starting value', function () {
   it("shouldn't return starting value if don't pass", () => {
     const nextFn = jest.fn();
     const subj = new Subject<string>();
@@ -40,7 +40,7 @@ describe('starting value', function() {
   });
 });
 
-describe('connector', function() {
+describe('connector', function () {
   it('should return value after re-subscribing', () => {
     const nextFn = jest.fn();
     const subj = new Subject<string>();
@@ -54,7 +54,7 @@ describe('connector', function() {
   });
 });
 
-describe('bufferSize', function() {
+describe('bufferSize', function () {
   it('should return latest value after re-subscribing', () => {
     const nextFn = jest.fn();
     const subj = new Subject<string>();
@@ -71,7 +71,7 @@ describe('bufferSize', function() {
   });
 });
 
-describe('refCount', function() {
+describe('refCount', function () {
   it('the internal subscriber must unsubscribe after the external subscribers unsubscribes', () => {
     const finalizeFn = jest.fn();
     const subj = new Subject<string>();
@@ -84,7 +84,7 @@ describe('refCount', function() {
   });
 });
 
-describe('share', function() {
+describe('share', function () {
   it('should subscribe once internally to several external', () => {
     const tapFn = jest.fn();
     const subj = new Subject<string>();

@@ -14,7 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "jest",
-    "lint": "tsdx lint",
+    "lint": "tsdx lint src test",
     "prepublishOnly": "tsdx build"
   },
   "devDependencies": {

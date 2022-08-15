@@ -1,6 +1,6 @@
 {
   "name": "@saferx/operators",
-  "version": "0.1.0",
+  "version": "0.1.0-rc",
   "license": "MIT",
   "author": "Rinat Arsaev",
   "main": "dist/index.js",

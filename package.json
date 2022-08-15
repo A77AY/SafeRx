@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "test": "lerna run test",
+    "test": "jest",
     "lint": "lerna run lint",
     "prettier:check": "prettier . --check",
     "prettier:fix": "prettier . --write"
